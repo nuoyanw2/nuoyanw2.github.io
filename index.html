@@ -1,9 +1,452 @@
 <!DOCTYPE html>
-<html>
-<body>
-
-<h1>Nuoyan Wang</h1>
-<p>Personal Portfolio</p>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuoyan Wang - Computer Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Anek+Devanagari:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body> 
+    <nav id="desktop-nav">
+        <div class="logo" onclick="returnHomePage()">Nuoyan Wang</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a id="sq" href="extras.html">EXTRAS</a></li>
+      </ul>
+    </div>
+    </nav> 
+    <nav id="hamburger-nav">
+        <div class="logo" onclick="returnHomePage()">Nuoyan Wang</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">ABOUT</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">SKILLS</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">PROJECTS</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">CONTACT</a></li>
+            <li><a id="sq2" href="extras.html" onclick="toggleMenu()">EXTRAS</a></li>
+          </div>
+        </div>
+      </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+          <img id="pfp" src="./images/pfp.png" alt="Nuoyan Wang pfp" />
+        </div>
+        <div class="section__text">
+          <p id="welcome" class="section__text__p1">Hello & Welcome to my page! I'm</p>
+          <h1 id="namecenter" class="title">Nuoyan Wang</h1>
+          <div class="animated-text">
+            <span></span>
+          </div>
+          <br>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./images/nuoyan-resume.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              id="linkedin-logo"
+              src="./images/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/nuoyan-wang-111656220/'"
+            />
+            <img
+              id="github-logo"
+              src="./images/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/nuoyan-wang'"
+            />
+          </div>
+        </div>
+    </section>
+    <section id="about">
+        <p id="discover-more" class="section__text__p1" onclick="location.href='./#about'">&#8595; Discover More &#8595;</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="./images/grad.jpg"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img
+                      src="./images/work.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <h3>Experience</h3>
+                    <h5> 3 Internships </h5>
+                    <p>Software Engineering
+                        <br />AI Engineering
+                    </p>
+                  </div>
+                <div class="details-container">
+                    <img
+                      src="./images/school.png"
+                      alt="Education icon"
+                      class="icon"
+                    />
+                    <h3>Education</h3>
+                    <h5> University of Illinois Urbana Champaign</h5>
+                    <p>
+                        2021 - 2024 B.S. Computer Engineering
+                        <br/>2024 - 2026 M.S. Elec & Computer Engineering
+                    </p>
+                  </div>
+              <div class="details-container">
+                <img
+                  src="./images/research.png"
+                  alt="Research icon"
+                  class="icon"
+                />
+                <h3>Research</h3>
+                <h5> University of Illinois Urbana Champaign </h5>
+                <p>
+                    (Upcoming) Research in AI/ML
+                    <br />
+                </p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+                reprehenderit et laborum, rem, dolore eum quod voluptate
+                exercitationem nobis, nihil esse debitis maxime facere minus sint
+                delectus velit in eos quo officiis explicabo deleniti dignissimos.
+                Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+                reiciendis ea magnam? Nulla, impedit fuga!
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./images/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#skills'"
+        />
+      </section>
+      <section id="skills">
+        <p id="explore-my" class="section__text__p1" onclick="location.href='./#skills'"">&#8595; Explore My &#8595;</p>
+        <h1 class="title">Technical Skills</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Programming Languages</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./images/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Python</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./images/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>C/C++</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./images/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Java</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./images/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Computer Technologies</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./images/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>SystemVerilog</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./images/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Assembly</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./images/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>TensorFlow</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./images/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CUDA</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Tools + Technologies</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./images/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Git</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./images/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>AI/ML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./images/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>DSP</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./images/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>OS Design</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./images/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>IoT Systems</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <p id="browse-my" class="section__text__p1" onclick="location.href='./#projects'">&#8595; Browse My &#8595;</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./images/tbd.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">In Progress</h2>
+              <div class="btn-container">
+                <button
+                  class="project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./images/tbd.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">In Progress</h2>
+              <div class="btn-container">
+                <button
+                  class="project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./images/tbd.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">In Progress</h2>
+              <div class="btn-container">
+                <button
+                  class="project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./images/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </section>
+      <section id="contact">
+        <p class="section__text__p1">Let's Connect!</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./images/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a id="contact-email" href="mailto:nuoyanw2@illinois.edu">nuoyanw2@illinois.edu</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./images/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p ><a id="contact-linkedin" href="https://www.linkedin.com/in/nuoyan-wang-111656220/">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav id="foot-nav" >
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a class="foot-nav-links" href="#about">ABOUT</a></li>
+              <li><a class="foot-nav-links" href="#skills">SKILLS</a></li>
+              <li><a class="foot-nav-links" href="#projects">PROJECTS</a></li>
+              <li><a class="foot-nav-links" href="#contact">CONTACT</a></li>
+              <li><a id="sq3" class="foot-nav-links" href="extras.html" onclick="toggleMenu()">EXTRAS</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 Nuoyan Wang. All Rights Reserved.</p>
+      </footer>
+    <script src="script.js"></script>
 </body>
 </html>
