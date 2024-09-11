@@ -1,0 +1,84 @@
+.masonry img {
+    width: 100%;
+  }
+  .masonry {
+    column-count: 4;
+    column-gap: 16px;
+  }
+  .masonry .mItem {
+    display: inline-block;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+  @media (max-width: 1899px) {
+    .masonry {
+      column-count: 3;
+    }
+  }
+  @media (max-width: 1199px) {
+    .masonry {
+      column-count: 3;
+    }
+  }
+  @media (max-width: 991px) {
+    .masonry {
+      column-count: 2;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .masonry {
+      column-count: 1;
+    }
+  }
+  #extra_text{
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+    height: 6vh;            
+  }
+
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .image-container img {
+    width: 100%; /* Adjust the width as needed */
+    transition: filter 0.3s ease;
+    display: block;
+  }
+  
+  .image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 5px solid white; /* This creates the unblurred border */
+    pointer-events: none; /* Ensure the border doesn't block hover interaction */
+    z-index: 1;
+  }
+  
+  .image-container .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 2;
+  }
+  
+  .image-container:hover img {
+    filter: blur(5px) brightness(0.3); /* Apply blur and darken on hover */
+  }
+  
+  .image-container:hover .overlay-text {
+    opacity: 1;
+  }
+  

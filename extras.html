@@ -3,10 +3,362 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuoyan Wang - My Personal Side</title>
+    <title>Nuoyan Wang - Personal Extras</title>
     <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="stylesheet" href="extras.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Anek+Devanagari:wght@100..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    In Progress
+    <nav id="desktop-nav">
+        <div class="logo" onclick="returnHomePage()">Nuoyan Wang</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="index.html#about">ABOUT</a></li>
+        <li><a href="index.html#skills">SKILLS</a></li>
+        <li><a href="index.html#projects">PROJECTS</a></li>
+        <li><a href="index.html#contact">CONTACT</a></li>
+        <li><a id="sq" href="extras.html">EXTRAS</a></li>
+      </ul>
+    </div>
+    </nav> 
+    <nav id="hamburger-nav">
+        <div class="logo" onclick="returnHomePage()">Nuoyan Wang</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">ABOUT</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">SKILLS</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">PROJECTS</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">CONTACT</a></li>
+            <li><a id="sq2" href="extras.html" onclick="toggleMenu()">EXTRAS</a></li>
+          </div>
+        </div>
+      </nav>
 </body>
+<script src="script.js"></script>
+<script>
+  function openFullscreenImage(imageUrl) {
+    window.open(imageUrl, '_blank').focus(); // Open the image in a new tab
+  }
+</script>
+
+    <br>
+  <h1 class="title">Travel + Photography</h1>
+        <p id="extra_text">
+          Welcome to my personal side! Here I have curated a collection of my favorite photos I've taken on my travels, taken on Canon 80D.<br> 
+          <br>   
+        </p>
+      </div>
+  <div class="masonry">
+    
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/1.jpg')">
+        <img src="/photography/1.jpg" alt="Photo">
+        <div class="overlay-text">"Total Eclipse" - Flora, IL (April 2024)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/2.jpg')">
+        <img src="/photography/2.jpg" alt="Photo">
+        <div class="overlay-text">"Paradise Sinkhole" - Wulong Karst National Park, China (July 2023)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/3.jpg')">
+        <img src="/photography/3.jpg" alt="Photo">
+        <div class="overlay-text">"Grand Yellowstone" - Yellowstone National Park (July 2024)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/4.jpg')">
+        <img src="/photography/4.jpg" alt="Photo">
+        <div class="overlay-text">"Mormon Row" - Grand Teton National Park (July 2024)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/5.jpg')">
+        <img src="/photography/5.jpg" alt="Photo">
+        <div class="overlay-text">"Graduation Pond" - University of Illinois (May 2024)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/6.jpg')">
+        <img src="/photography/6.jpg" alt="Photo">
+        <div class="overlay-text">"Schwabacher Landing" - Grand Teton National Park (July 2024)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/7.jpg')">
+        <img src="/photography/7.jpg" alt="Photo">
+        <div class="overlay-text">"Avalanche Lake" - Glacier National Park (August 2024)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/8.jpg')">
+        <img src="/photography/8.jpg" alt="Photo">
+        <div class="overlay-text">"Yangtze Bend" - Hubei, China (July 2023)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/9.jpg')">
+        <img src="/photography/9.jpg" alt="Photo">
+        <div class="overlay-text">"Grinell Lake" - Glacier National Park (August 2024)</div>
+      </div>
+    </div>
+    
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/10.jpg')">
+        <img src="/photography/10.jpg" alt="Photo">
+        <div class="overlay-text">"Grinell Glacier" - Glacier National Park (August 2024)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/11.jpg')">
+        <img src="/photography/11.jpg" alt="Photo">
+        <div class="overlay-text">"Moose at Schwabacher" - Grand Teton National Park (July 2024)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/12.jpg')">
+        <img src="/photography/12.jpg" alt="Photo">
+        <div class="overlay-text">"Triple Gloves" - Monument Valley, AZ (December 2023)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/13.jpg')">
+        <img src="/photography/13.jpg" alt="Photo">
+        <div class="overlay-text">"Hoodoo Sunset" - Bryce Canyon National Park (December 2023)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/14.jpg')">
+        <img src="/photography/14.jpg" alt="Photo">
+        <div class="overlay-text">"Winter Gull" - Niagara Falls, Ontario (March 2018)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/15.jpg')">
+        <img src="/photography/15.jpg" alt="Photo">
+        <div class="overlay-text">"Glacier Path" - Rogers Pass, BC (August 2024)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/16.jpg')">
+        <img src="/photography/16.jpg" alt="Photo">
+        <div class="overlay-text">"Temple Entrance" - Oahu, HI (January 2023)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/17.jpg')">
+        <img src="/photography/17.jpg" alt="Photo">
+        <div class="overlay-text">"Vintage Cybenpunk" - Hongyadong, China (July 2023)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/18.jpg')">
+        <img src="/photography/18.jpg" alt="Photo">
+        <div class="overlay-text">"Wheel of Fog" - Tianjin, China (August 2023)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/19.jpg')">
+        <img src="/photography/19.jpg" alt="Photo">
+        <div class="overlay-text">"Mountaintop Meadow" - Revelstoke, BC (August 2024)</div>
+      </div>
+    </div>
+    
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/20.jpg')">
+        <img src="/photography/20.jpg" alt="Photo">
+        <div class="overlay-text">"Reflection Garden" - Revelstoke, BC (August 2024)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/21.jpg')">
+        <img src="/photography/21.jpg" alt="Photo">
+        <div class="overlay-text">"Peyto Lake" - Banff National Park (August 2024)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/22.jpg')">
+        <img src="/photography/22.jpg" alt="Photo">
+        <div class="overlay-text">"Archception" - Arches National Park (December 2023)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/23.jpg')">
+        <img src="/photography/23.jpg" alt="Photo">
+        <div class="overlay-text">"Peyto Lake Icefield" - Banff National Park (August 2024)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/24.jpg')">
+        <img src="/photography/24.jpg" alt="Photo">
+        <div class="overlay-text">"Yin & Yang" - Suzhou, China (August 2023)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/25.jpg')">
+        <img src="/photography/25.jpg" alt="Photo">
+        <div class="overlay-text">"Harker" - Illini Service Dogs (April 2024)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/26.jpg')">
+        <img src="/photography/26.jpg" alt="Photo">
+        <div class="overlay-text">"Peak Sunset" - Mauna Kea, HI (December 2022)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/27.jpg')">
+        <img src="/photography/27.jpg" alt="Photo">
+        <div class="overlay-text">"Mesa Arch Sunrise" - Arches National Park (December 2023)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/28.jpg')">
+        <img src="/photography/28.jpg" alt="Photo">
+        <div class="overlay-text">"Peak and Canyon " - Canyonlands National Park (December 2023)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/29.jpg')">
+        <img src="/photography/29.jpg" alt="Photo">
+        <div class="overlay-text">"Panorama" - Badlands National Park (July 2024)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/30.jpg')">
+        <img src="/photography/30.jpg" alt="Photo">
+        <div class="overlay-text">"Sunset of Dreams" - Lake Superior Provincial Park, ON (July 2022)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/31.jpg')">
+        <img src="/photography/31.jpg" alt="Photo">
+        <div class="overlay-text">"Paradise Meadow" - Glacier National Park (July 2024)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/32.jpg')">
+        <img src="/photography/32.jpg" alt="Photo">
+        <div class="overlay-text">"Logan Pass" - Glacier National Park (July 2024)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/33.jpg')">
+        <img src="/photography/33.jpg" alt="Photo">
+        <div class="overlay-text">"Emerald Lake" - Yoho National Park (August 2024)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/34.jpg')">
+        <img src="/photography/34.jpg" alt="Photo">
+        <div class="overlay-text">"Falltime Riverwalk" - Chicago, IL (October 2022)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/35.jpg')">
+        <img src="/photography/35.jpg" alt="Photo">
+        <div class="overlay-text">"Graduation" - Champaign, IL (May 2024)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/36.jpg')">
+        <img src="/photography/36.jpg" alt="Photo">
+        <div class="overlay-text">"Lonely Vessel" - Wulong Karst National Park, China (July 2023)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/37.jpg')">
+        <img src="/photography/37.jpg" alt="Photo">
+        <div class="overlay-text">"Zoomin" - Beijing, China (July 2023)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/38.jpg')">
+        <img src="/photography/38.jpg" alt="Photo">
+        <div class="overlay-text">"East-Western" - Shanghai, China (August 2023)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/39.jpg')">
+        <img src="/photography/39.jpg" alt="Photo">
+        <div class="overlay-text">"Arch Photography" - Arches National Park (April 2022)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/40.jpg')">
+        <img src="/photography/40.jpg" alt="Photo">
+        <div class="overlay-text">"Frogger" - Acadia National Park (August 2022)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/41.jpg')">
+        <img src="/photography/41.jpg" alt="Photo">
+        <div class="overlay-text">"Cadillac Mountain" - Acadia National Park (August 2022)</div>
+      </div>
+    </div>
+
+    <div class="mItem">
+      <div class="image-container" onclick="openFullscreenImage('/photography/42.jpg')">
+        <img src="/photography/42.jpg" alt="Photo">
+        <div class="overlay-text">"Eastern Point" - Cape Breton Highlands National Park (August 2022)</div>
+      </div>
+    </div>
+  
+  </div>
+
 </html>
